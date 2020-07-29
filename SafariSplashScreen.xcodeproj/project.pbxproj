@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		376DF27524D0F8C8007CB39C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376DF27424D0F8C8007CB39C /* ContentView.swift */; };
 		376DF27724D0F8C9007CB39C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376DF27624D0F8C9007CB39C /* Assets.xcassets */; };
 		376DF27A24D0F8C9007CB39C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376DF27924D0F8C9007CB39C /* Preview Assets.xcassets */; };
+		376DF28324D0FCE4007CB39C /* VisualEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 376DF28224D0FCE4007CB39C /* VisualEffects */; };
+		376DF28524D12D18007CB39C /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376DF28424D12D18007CB39C /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,7 @@
 		376DF27624D0F8C9007CB39C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		376DF27924D0F8C9007CB39C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		376DF27B24D0F8C9007CB39C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		376DF28424D12D18007CB39C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376DF28324D0FCE4007CB39C /* VisualEffects in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +58,7 @@
 			children = (
 				376DF27224D0F8C8007CB39C /* SafariSplashScreenApp.swift */,
 				376DF27424D0F8C8007CB39C /* ContentView.swift */,
+				376DF28424D12D18007CB39C /* File.swift */,
 				376DF27624D0F8C9007CB39C /* Assets.xcassets */,
 				376DF27B24D0F8C9007CB39C /* Info.plist */,
 				376DF27824D0F8C9007CB39C /* Preview Content */,
@@ -85,6 +90,9 @@
 			dependencies = (
 			);
 			name = SafariSplashScreen;
+			packageProductDependencies = (
+				376DF28224D0FCE4007CB39C /* VisualEffects */,
+			);
 			productName = SafariSplashScreen;
 			productReference = 376DF26F24D0F8C8007CB39C /* SafariSplashScreen.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +120,9 @@
 				Base,
 			);
 			mainGroup = 376DF26624D0F8C8007CB39C;
+			packageReferences = (
+				376DF28124D0FCE4007CB39C /* XCRemoteSwiftPackageReference "VisualEffects" */,
+			);
 			productRefGroup = 376DF27024D0F8C8007CB39C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				376DF27524D0F8C8007CB39C /* ContentView.swift in Sources */,
+				376DF28524D12D18007CB39C /* File.swift in Sources */,
 				376DF27324D0F8C8007CB39C /* SafariSplashScreenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +340,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		376DF28124D0FCE4007CB39C /* XCRemoteSwiftPackageReference "VisualEffects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/VisualEffects";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		376DF28224D0FCE4007CB39C /* VisualEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 376DF28124D0FCE4007CB39C /* XCRemoteSwiftPackageReference "VisualEffects" */;
+			productName = VisualEffects;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 376DF26724D0F8C8007CB39C /* Project object */;
 }
